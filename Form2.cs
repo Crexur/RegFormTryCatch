@@ -10,28 +10,25 @@ using System.Windows.Forms;
 
 namespace RegFormTryCatch
 {
-    public partial class frmConfirm : Form
+    public partial class frmFileName : Form
     {
-        public frmConfirm()
+
+        public string SetFileName { get; set; }
+
+        public frmFileName()
         {
             InitializeComponent();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            SetFileName = txtFileName.Text;
+            Close();
         }
 
         private void frmConfirm_Load(object sender, EventArgs e)
         {
-            lblstudentno.Text = StudentInformationClass.SetStudentNo.ToString();
-            lblname.Text = StudentInformationClass.SetFullName;
-            lblprogram.Text = StudentInformationClass.SetProgram;
-            lblbirthday.Text = StudentInformationClass.SetBirthday;
-            lblgender.Text = StudentInformationClass.SetGender;
-            lblcontactno.Text = StudentInformationClass.SetContactNo.ToString();
-            lblage.Text = StudentInformationClass.SetAge.ToString();
-
+            
         }
     }
 }

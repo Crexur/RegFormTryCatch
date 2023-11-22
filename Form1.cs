@@ -109,16 +109,30 @@ namespace RegFormTryCatch
         {
             try
             {
-                StudentInformationClass.SetFullName = FullName(txtlastname.Text, txtfirstname.Text, txtmiddleinitial.Text);
-                StudentInformationClass.SetStudentNo = Convert.ToInt32(txtstudentno.Text);
-                StudentInformationClass.SetProgram = cbprogram.Text;
-                StudentInformationClass.SetGender = cbgender.Text;
-                StudentInformationClass.SetContactNo = Convert.ToInt32(txtstudentno.Text);
-                StudentInformationClass.SetAge = Age(txtage.Text);
-                StudentInformationClass.SetBirthday = datepickerbirthday.Value.ToString("yyyy-MM-dd");
+                string fileName = Convert.ToInt32(txtstudentno.Text) + " .txt";
+                string docPath = @"C:\Users\user\Desktop\Java16\passwords";
+                
 
-                frmConfirm frm = new frmConfirm();
-                frm.ShowDialog();
+                string[] studentInformation = new string[] 
+                {
+                    "Student Number: " + Convert.ToInt32(txtstudentno.Text),
+                    "Full Name: " + FullName(txtlastname.Text, txtfirstname.Text, txtmiddleinitial.Text),
+                    "Program: " + cbprogram.Text,
+                    "Gender: " + cbgender.Text,
+                    "Age: " + Age(txtage.Text),
+                    "Birthday: " + datepickerbirthday.Value.ToString("yyyy-MM-dd"),
+                    "Contact No.: " + txtcontactno.Text
+                };
+
+                using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, fileName), true))
+                {
+                    foreach (string line in studentInformation)
+                    {
+                        outputFile.WriteLine(line);
+                        Console.WriteLine(line);
+                    }
+                }
+
             }
             catch (Exception ex)
             {

@@ -28,228 +28,225 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnregister = new System.Windows.Forms.Button();
-            this.txtstudentno = new System.Windows.Forms.TextBox();
-            this.txtcontactno = new System.Windows.Forms.TextBox();
-            this.txtmiddleinitial = new System.Windows.Forms.TextBox();
-            this.txtfirstname = new System.Windows.Forms.TextBox();
-            this.txtage = new System.Windows.Forms.TextBox();
-            this.txtlastname = new System.Windows.Forms.TextBox();
-            this.cbprogram = new System.Windows.Forms.ComboBox();
-            this.cbgender = new System.Windows.Forms.ComboBox();
-            this.datepickerbirthday = new System.Windows.Forms.DateTimePicker();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            btnregister = new Button();
+            txtstudentno = new TextBox();
+            txtcontactno = new TextBox();
+            txtmiddleinitial = new TextBox();
+            txtfirstname = new TextBox();
+            txtage = new TextBox();
+            txtlastname = new TextBox();
+            cbprogram = new ComboBox();
+            cbgender = new ComboBox();
+            datepickerbirthday = new DateTimePicker();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Registration";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(30, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(132, 30);
+            label1.TabIndex = 0;
+            label1.Text = "Registration";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Student No";
+            label2.AutoSize = true;
+            label2.Location = new Point(30, 79);
+            label2.Name = "label2";
+            label2.Size = new Size(67, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Student No";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Last Name";
+            label3.AutoSize = true;
+            label3.Location = new Point(30, 121);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Last Name";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(59, 154);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Age";
+            label4.AutoSize = true;
+            label4.Location = new Point(30, 157);
+            label4.Name = "label4";
+            label4.Size = new Size(28, 15);
+            label4.TabIndex = 3;
+            label4.Text = "Age";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Birthday";
+            label5.AutoSize = true;
+            label5.Location = new Point(105, 201);
+            label5.Name = "label5";
+            label5.Size = new Size(51, 15);
+            label5.TabIndex = 4;
+            label5.Text = "Birthday";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(241, 98);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 15);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Program";
+            label6.AutoSize = true;
+            label6.Location = new Point(260, 79);
+            label6.Name = "label6";
+            label6.Size = new Size(53, 15);
+            label6.TabIndex = 5;
+            label6.Text = "Program";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(230, 127);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 15);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "First Name";
+            label7.AutoSize = true;
+            label7.Location = new Point(256, 113);
+            label7.Name = "label7";
+            label7.Size = new Size(64, 15);
+            label7.TabIndex = 6;
+            label7.Text = "First Name";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(406, 127);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 15);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "M.I";
+            label8.AutoSize = true;
+            label8.Location = new Point(436, 108);
+            label8.Name = "label8";
+            label8.Size = new Size(24, 15);
+            label8.TabIndex = 7;
+            label8.Text = "M.I";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(255, 154);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 15);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Gender";
+            label9.AutoSize = true;
+            label9.Location = new Point(260, 134);
+            label9.Name = "label9";
+            label9.Size = new Size(45, 15);
+            label9.TabIndex = 8;
+            label9.Text = "Gender";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(318, 187);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 15);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Contact No";
+            label10.AutoSize = true;
+            label10.Location = new Point(256, 166);
+            label10.Name = "label10";
+            label10.Size = new Size(68, 15);
+            label10.TabIndex = 9;
+            label10.Text = "Contact No";
             // 
             // btnregister
             // 
-            this.btnregister.Location = new System.Drawing.Point(228, 221);
-            this.btnregister.Name = "btnregister";
-            this.btnregister.Size = new System.Drawing.Size(75, 23);
-            this.btnregister.TabIndex = 10;
-            this.btnregister.Text = "Register";
-            this.btnregister.UseVisualStyleBackColor = true;
-            this.btnregister.Click += new System.EventHandler(this.btnregister_Click);
+            btnregister.Location = new Point(236, 237);
+            btnregister.Name = "btnregister";
+            btnregister.Size = new Size(75, 23);
+            btnregister.TabIndex = 10;
+            btnregister.Text = "Register";
+            btnregister.UseVisualStyleBackColor = true;
+            btnregister.Click += btnregister_Click;
             // 
             // txtstudentno
             // 
-            this.txtstudentno.Location = new System.Drawing.Point(103, 90);
-            this.txtstudentno.Name = "txtstudentno";
-            this.txtstudentno.Size = new System.Drawing.Size(100, 23);
-            this.txtstudentno.TabIndex = 11;
+            txtstudentno.Location = new Point(103, 76);
+            txtstudentno.Name = "txtstudentno";
+            txtstudentno.Size = new Size(123, 23);
+            txtstudentno.TabIndex = 11;
             // 
             // txtcontactno
             // 
-            this.txtcontactno.Location = new System.Drawing.Point(392, 182);
-            this.txtcontactno.Name = "txtcontactno";
-            this.txtcontactno.Size = new System.Drawing.Size(100, 23);
-            this.txtcontactno.TabIndex = 12;
+            txtcontactno.Location = new Point(322, 161);
+            txtcontactno.Name = "txtcontactno";
+            txtcontactno.Size = new Size(108, 23);
+            txtcontactno.TabIndex = 12;
             // 
             // txtmiddleinitial
             // 
-            this.txtmiddleinitial.Location = new System.Drawing.Point(436, 124);
-            this.txtmiddleinitial.Name = "txtmiddleinitial";
-            this.txtmiddleinitial.Size = new System.Drawing.Size(48, 23);
-            this.txtmiddleinitial.TabIndex = 14;
+            txtmiddleinitial.Location = new Point(466, 105);
+            txtmiddleinitial.Name = "txtmiddleinitial";
+            txtmiddleinitial.Size = new Size(48, 23);
+            txtmiddleinitial.TabIndex = 14;
             // 
             // txtfirstname
             // 
-            this.txtfirstname.Location = new System.Drawing.Point(300, 124);
-            this.txtfirstname.Name = "txtfirstname";
-            this.txtfirstname.Size = new System.Drawing.Size(100, 23);
-            this.txtfirstname.TabIndex = 15;
+            txtfirstname.Location = new Point(319, 105);
+            txtfirstname.Name = "txtfirstname";
+            txtfirstname.Size = new Size(111, 23);
+            txtfirstname.TabIndex = 15;
             // 
             // txtage
             // 
-            this.txtage.Location = new System.Drawing.Point(103, 151);
-            this.txtage.Name = "txtage";
-            this.txtage.Size = new System.Drawing.Size(100, 23);
-            this.txtage.TabIndex = 16;
+            txtage.Location = new Point(64, 154);
+            txtage.Name = "txtage";
+            txtage.Size = new Size(162, 23);
+            txtage.TabIndex = 16;
             // 
             // txtlastname
             // 
-            this.txtlastname.Location = new System.Drawing.Point(103, 119);
-            this.txtlastname.Name = "txtlastname";
-            this.txtlastname.Size = new System.Drawing.Size(100, 23);
-            this.txtlastname.TabIndex = 17;
+            txtlastname.Location = new Point(103, 116);
+            txtlastname.Name = "txtlastname";
+            txtlastname.Size = new Size(123, 23);
+            txtlastname.TabIndex = 17;
             // 
             // cbprogram
             // 
-            this.cbprogram.FormattingEnabled = true;
-            this.cbprogram.Location = new System.Drawing.Point(300, 95);
-            this.cbprogram.Name = "cbprogram";
-            this.cbprogram.Size = new System.Drawing.Size(144, 23);
-            this.cbprogram.TabIndex = 18;
+            cbprogram.FormattingEnabled = true;
+            cbprogram.Location = new Point(319, 76);
+            cbprogram.Name = "cbprogram";
+            cbprogram.Size = new Size(155, 23);
+            cbprogram.TabIndex = 18;
             // 
             // cbgender
             // 
-            this.cbgender.FormattingEnabled = true;
-            this.cbgender.Items.AddRange(new object[] {
-            "Male ",
-            "Female",
-            "Other..."});
-            this.cbgender.Location = new System.Drawing.Point(300, 151);
-            this.cbgender.Name = "cbgender";
-            this.cbgender.Size = new System.Drawing.Size(121, 23);
-            this.cbgender.TabIndex = 19;
+            cbgender.FormattingEnabled = true;
+            cbgender.Items.AddRange(new object[] { "Male ", "Female", "Other..." });
+            cbgender.Location = new Point(311, 134);
+            cbgender.Name = "cbgender";
+            cbgender.Size = new Size(144, 23);
+            cbgender.TabIndex = 19;
             // 
             // datepickerbirthday
             // 
-            this.datepickerbirthday.Location = new System.Drawing.Point(103, 179);
-            this.datepickerbirthday.Name = "datepickerbirthday";
-            this.datepickerbirthday.Size = new System.Drawing.Size(200, 23);
-            this.datepickerbirthday.TabIndex = 20;
+            datepickerbirthday.Location = new Point(178, 195);
+            datepickerbirthday.Name = "datepickerbirthday";
+            datepickerbirthday.Size = new Size(200, 23);
+            datepickerbirthday.TabIndex = 20;
             // 
             // frmRegistration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 299);
-            this.Controls.Add(this.datepickerbirthday);
-            this.Controls.Add(this.cbgender);
-            this.Controls.Add(this.cbprogram);
-            this.Controls.Add(this.txtlastname);
-            this.Controls.Add(this.txtage);
-            this.Controls.Add(this.txtfirstname);
-            this.Controls.Add(this.txtmiddleinitial);
-            this.Controls.Add(this.txtcontactno);
-            this.Controls.Add(this.txtstudentno);
-            this.Controls.Add(this.btnregister);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "frmRegistration";
-            this.Text = "frmRegistration";
-            this.Load += new System.EventHandler(this.frmRegistration_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(526, 299);
+            Controls.Add(datepickerbirthday);
+            Controls.Add(cbgender);
+            Controls.Add(cbprogram);
+            Controls.Add(txtlastname);
+            Controls.Add(txtage);
+            Controls.Add(txtfirstname);
+            Controls.Add(txtmiddleinitial);
+            Controls.Add(txtcontactno);
+            Controls.Add(txtstudentno);
+            Controls.Add(btnregister);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "frmRegistration";
+            Text = "frmRegistration";
+            Load += frmRegistration_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

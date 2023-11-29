@@ -48,6 +48,7 @@
             cbprogram = new ComboBox();
             cbgender = new ComboBox();
             datepickerbirthday = new DateTimePicker();
+            btnRecord = new Button();
             SuspendLayout();
             // 
             // label1
@@ -143,7 +144,7 @@
             // 
             // btnregister
             // 
-            btnregister.Location = new Point(236, 237);
+            btnregister.Location = new Point(218, 241);
             btnregister.Name = "btnregister";
             btnregister.Size = new Size(75, 23);
             btnregister.TabIndex = 10;
@@ -217,11 +218,22 @@
             datepickerbirthday.Size = new Size(200, 23);
             datepickerbirthday.TabIndex = 20;
             // 
+            // btnRecord
+            // 
+            btnRecord.Location = new Point(413, 241);
+            btnRecord.Name = "btnRecord";
+            btnRecord.Size = new Size(75, 23);
+            btnRecord.TabIndex = 21;
+            btnRecord.Text = "Records";
+            btnRecord.UseVisualStyleBackColor = true;
+            btnRecord.Click += btnRecord_Click;
+            // 
             // frmRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(526, 299);
+            Controls.Add(btnRecord);
             Controls.Add(datepickerbirthday);
             Controls.Add(cbgender);
             Controls.Add(cbprogram);
@@ -271,5 +283,6 @@
         private ComboBox cbprogram;
         private ComboBox cbgender;
         private DateTimePicker datepickerbirthday;
+        private Button btnRecord;
     }
 }

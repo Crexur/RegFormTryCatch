@@ -1,6 +1,6 @@
 ﻿namespace RegFormTryCatch
 {
-    partial class frmFileName
+    partial class frmStudentRecord
     {
         /// <summary>
         /// Required designer variable.
@@ -28,48 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnOkay = new Button();
-            txtFileName = new TextBox();
+            btnRegister = new Button();
             label1 = new Label();
+            IvShowText = new ListView();
+            btnFind = new Button();
+            btnUpload = new Button();
+            openFileDialog1 = new OpenFileDialog();
             SuspendLayout();
             // 
-            // btnOkay
+            // btnRegister
             // 
-            btnOkay.Location = new Point(102, 108);
-            btnOkay.Name = "btnOkay";
-            btnOkay.Size = new Size(75, 23);
-            btnOkay.TabIndex = 14;
-            btnOkay.Text = "Okay";
-            btnOkay.UseVisualStyleBackColor = true;
-            btnOkay.Click += btnSubmit_Click;
-            // 
-            // txtFileName
-            // 
-            txtFileName.Location = new Point(12, 64);
-            txtFileName.Name = "txtFileName";
-            txtFileName.Size = new Size(265, 23);
-            txtFileName.TabIndex = 15;
+            btnRegister.Location = new Point(319, 62);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(75, 23);
+            btnRegister.TabIndex = 14;
+            btnRegister.Text = "Register";
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnSubmit_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(12, 36);
+            label1.Location = new Point(12, 23);
             label1.Name = "label1";
-            label1.Size = new Size(99, 25);
+            label1.Size = new Size(123, 25);
             label1.TabIndex = 16;
-            label1.Text = "File Name";
+            label1.Text = "View Record";
             // 
-            // frmFileName
+            // IvShowText
+            // 
+            IvShowText.Location = new Point(14, 62);
+            IvShowText.Name = "IvShowText";
+            IvShowText.Size = new Size(299, 97);
+            IvShowText.TabIndex = 17;
+            IvShowText.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnFind
+            // 
+            btnFind.Location = new Point(319, 91);
+            btnFind.Name = "btnFind";
+            btnFind.Size = new Size(75, 23);
+            btnFind.TabIndex = 18;
+            btnFind.Text = "Find";
+            btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
+            // 
+            // btnUpload
+            // 
+            btnUpload.Location = new Point(319, 120);
+            btnUpload.Name = "btnUpload";
+            btnUpload.Size = new Size(75, 23);
+            btnUpload.TabIndex = 19;
+            btnUpload.Text = "Upload";
+            btnUpload.UseVisualStyleBackColor = true;
+            btnUpload.Click += btnUpload_Click;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // frmStudentRecord
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(289, 189);
+            ClientSize = new Size(455, 189);
+            Controls.Add(btnUpload);
+            Controls.Add(btnFind);
+            Controls.Add(IvShowText);
             Controls.Add(label1);
-            Controls.Add(txtFileName);
-            Controls.Add(btnOkay);
-            Name = "frmFileName";
-            Text = "Form2";
+            Controls.Add(btnRegister);
+            Name = "frmStudentRecord";
+            Text = "frmStudentRecord";
             Load += frmConfirm_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -89,8 +119,11 @@
         private Label lblbirthday;
         private Label lblgender;
         private Label lblcontactno;
-        private Button btnOkay;
-        private TextBox txtFileName;
+        private Button btnRegister;
         private Label label1;
+        private ListView IvShowText;
+        private Button btnFind;
+        private Button btnUpload;
+        private OpenFileDialog openFileDialog1;
     }
 }

@@ -93,6 +93,7 @@ namespace RegFormTryCatch
 
         private void frmRegistration_Load(object sender, EventArgs e)
         {
+
             string[] ListOfProgram = new string[] { "BS Information Technology",
         "BS Computer Science", "BS Information Systems", "BS in Accountancy",
         "BS in Hospitality Management", "BS in Tourism Management"
@@ -111,9 +112,9 @@ namespace RegFormTryCatch
             {
                 string fileName = Convert.ToInt32(txtstudentno.Text) + " .txt";
                 string docPath = @"C:\Users\user\Desktop\Java16\passwords";
-                
 
-                string[] studentInformation = new string[] 
+
+                string[] studentInformation = new string[]
                 {
                     "Student Number: " + Convert.ToInt32(txtstudentno.Text),
                     "Full Name: " + FullName(txtlastname.Text, txtfirstname.Text, txtmiddleinitial.Text),
@@ -138,6 +139,16 @@ namespace RegFormTryCatch
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnRecord_Click(object sender, EventArgs e)
+        {
+            frmStudentRecord showRecord = new frmStudentRecord();
+            showRecord.FormClosed += (s, args) => {
+                this.Show(); // Show the current instance of frmRegistration
+            };
+            this.Hide(); // Hide the current instance of frmRegistration
+            showRecord.ShowDialog();
         }
     }
 }
